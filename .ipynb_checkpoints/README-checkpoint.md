@@ -38,22 +38,7 @@ FUTURE_ML_02/
 Text preprocessing, NLP classification, priority logic, support analytics.
 
 ## Results
-Both classifiers (category and priority) were trained using TF-IDF features on
-ticket text (subject + description) with Logistic Regression:
-
-| Task | Accuracy | Notes |
-|---|---|---|
-| Category Classification | ~20% | Near random chance (5 balanced classes) |
-| Priority Classification | ~25% | Near random chance (4 balanced classes) |
-
-**Key finding:** Both models performed close to random chance despite thorough
-preprocessing and feature engineering. This indicates the ticket text in this dataset
-does not carry a strong learnable signal for either label — likely due to
-synthetic/randomized label assignment in the source dataset. This is a valid and
-important diagnostic finding: it demonstrates the ability to recognize when a model's
-poor performance stems from data limitations rather than modeling errors, and to
-recommend next steps (e.g. auditing label quality, adding richer features) rather
-than over-tuning against noise.
+> Fill in after running: chosen model, accuracy/F1 scores, and a 2–3 sentence takeaway.
 
 ## How to Run
 ```bash
